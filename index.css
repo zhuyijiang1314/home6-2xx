@@ -1,4 +1,3 @@
-
 .mod {
   width: 100vw;
   height: 211.11vw;
@@ -33,10 +32,9 @@
   position: absolute;
   left: 0;
   top: 0;
-  overflow: hidden !important;
+  overflow: hidden;
   width: 88.89vw;
   height: 55.56vw;
-  /* background-color: #75DF56; */
   background-image: linear-gradient(
     90deg,
     rgba(137, 226, 95, 1) 0%,
@@ -46,20 +44,17 @@
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
 }
-.entry-pic-wrapper {
+.action-bg-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin-top: 7.22vw;
 }
-.entry-pic {
+.action-bg {
   width: 74.72vw;
-  height: 38.06vw;
+  height: 32.78vw;
 }
-
-
-
 
 
 
@@ -156,4 +151,3 @@
   }
   
 }
-
