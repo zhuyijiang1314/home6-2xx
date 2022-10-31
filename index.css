@@ -73,7 +73,7 @@
   left:-4%;
   top:2%;
   animation: move-one 7s linear infinite;
-  transform:rotate(0) translate(100px) rotate(0) scale(1); 
+  transform:rotate(0) translate(100px) rotate(0) scale(1) skewY(15deg) skewX(5deg); 
 }
 
 .two {
@@ -102,32 +102,23 @@
   bottom:2%;
   right:1%;
   animation: move-three 10s linear infinite;
-  transform:rotate(0) translate(100px) rotate(0) scale(0.9);
+  transform:rotate(0) translate(100px) rotate(0) scale(0.8) skewY(25deg) skewX(5deg);
 }
-/* .five{
-  border-radius: 100%;
-  width: 35vw;
-  height: 30vw;
-  background-color: #49D642;
-  bottom:-20%;
-  right:20%;
-  animation: move-five 7s ease infinite;
-  transform:rotate(0) translate(100px) rotate(0); 
-} */
 
 @keyframes move-one {
   50% {
-    transform:rotate(-0.7turn) translate(110px) rotate(0.5turn) scale(1.2);
-    opacity: 0.8;
+    transform:rotate(-0.7turn) translate(110px) rotate(0.5turn) scale(1.2) skewY(-15deg) skewX(-5deg);
+    opacity: 1;
   }
   100% {
-    transform:rotate(-1turn) translate(100px) rotate(1turn) scale(1);
+    transform:rotate(-1turn) translate(100px) rotate(1turn) scale(1) skewY(15deg) skewX(5deg);
     opacity: 1;
   }
   
 }
 
 @keyframes move-two {
+
   100% {
     transform:rotate(1turn) translate(100px) rotate(-1turn);
   }
@@ -135,19 +126,13 @@
 
 @keyframes move-three {
   50% {
-    transform:rotate(-0.5turn) translate(130px) rotate(0.5turn) scale(1.2);
-    opacity: 0.5;
+    transform:rotate(-0.5turn) translate(130px) rotate(0.5turn) scale(1) skewY(-25deg) skewX(-5deg);
+    opacity: 0.7;
   }
   100% {
-    transform:rotate(-1turn) translate(100px) rotate(1turn) scale(0.9);
+    transform:rotate(-1turn) translate(100px) rotate(1turn) scale(0.8) skewY(25deg) skewX(5deg);
     opacity: 1;
   }
  
-  
-}
-@keyframes move-five {
-  100% {
-    transform:rotate(-1turn) translate(100px) rotate(1turn) scaleY(1.5);
-  }
   
 }
